@@ -22,12 +22,18 @@ k = 3
 """
 def ex2(data, k):
 
+    storage = {}
     list = []
 
     for i in data:
-        if i > k:
-            list.append(i)
+        if i in storage:
+            storage[i] += 1
+        else:
+            storage[i] = 1
 
+    for z in storage:
+        if storage[z] > k:
+            list.append(z)
     return list
 
 """
@@ -94,9 +100,8 @@ def ex6():
 
 def ex7():
     for i in range(1000,3001):
-        if i % 2 == 0:
+        if i % 2 == 0 and (i/10)%2 == 0 and (i/100)%2 == 0 and (i/1000)%2 == 0:
             print(i, end=',')
-
 
 
 data1 = [-10, -21, -4, -45, -66, 93, 11, -4, -6, 12, 11, 4]
@@ -114,5 +119,5 @@ test_list1 = [[4, 3, 5,], [1, 2, 3], [3, 7, 4]]
 test_list2 = [[1], [9], [8]]
 print(ex5(test_list1, test_list2))
 #print(ex6())
-#print(ex7())
+print(ex7())
 
