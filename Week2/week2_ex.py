@@ -1,3 +1,5 @@
+import sys
+
 import numpy as np
 import re
 """
@@ -23,8 +25,13 @@ print(data2)
 """
 
 data3 = np.array([1,6,4,8,9,-4,-2,11])
-max = np.max(data3)
-min = np.min(data3)
+max = -sys.maxsize-1
+min = sys.maxsize
+for i in range(len(data3)):
+    if data3[i] > max:
+        max = i
+    elif data3[i] < min:
+        min = i
 
 print(f'Max Array is: {max}\n'
       f'Min Array is: {min}')
@@ -44,7 +51,7 @@ with open('story.txt', 'r', encoding='utf-8-sig') as file:
     data = file.read()
 
 #arr = re.split(r'[,.;:?!() \n\\\'"]',data)
-arr = re.findall(r'\b\w+\b', data)
+arr = re.findall(r'\w+\b', data)
 arr = [i.strip() for i in arr if i.strip()]
 items, quantity = np.unique(arr, return_counts=True)
 
