@@ -131,3 +131,7 @@ Confusion matrix:
  - Color jersey
  ![cm_color](https://github.com/user-attachments/assets/0b7708d2-e364-4e17-9a25-a09e581eeaa8)
 
+Video Demo:
+[Watch demo video on Google Drive](https://drive.google.com/file/d/1Rgk5gqdkFfY3BrD5mx7Lc4gNPkB_b2Xs/view?usp=sharing)
+
+
