@@ -27,8 +27,12 @@ Result:
  => No overfitting.
 
   - Precision and Recall achieve good values.
+  "The first 50 epochs"
+
 ![results](https://github.com/user-attachments/assets/9ecd1740-02e0-417d-893c-c905e4098397)
 
+  "The next 20 epochs"
+  
 ![results](https://github.com/user-attachments/assets/071966b0-9207-462f-8705-4d4b23258edb)
 
 Confusion matrix: 
@@ -52,11 +56,15 @@ Confusion matrix:
 I choose Resnet50 for classifier task. However, its performance is not as good as expect. It was overfitting. After that, I decided changes to EfficientNet B0. The result fingure out performance of EfficientNet B0 better than Resnet50.
 
 "RESNET50"
+
 ![image](https://github.com/user-attachments/assets/8e2ea598-a3d5-4774-8b39-5d6baec4d700)
+
 ![image](https://github.com/user-attachments/assets/4b3ad8ed-adb3-4af6-aee6-ea33bf1ece66)
 
 "EFFICIENTNETB0"
+
 ![image](https://github.com/user-attachments/assets/f20b64eb-70f2-43ae-831a-9f14ee8f04e1)
+
 ![image](https://github.com/user-attachments/assets/a46ab4b7-cb37-49e5-9882-60b4cb42fd0f)
 
 
