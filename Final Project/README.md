@@ -27,6 +27,7 @@ Result:
  => No overfitting.
 
   - Precision and Recall achieve good values.
+
   "The first 50 epochs"
 
 ![results](https://github.com/user-attachments/assets/9ecd1740-02e0-417d-893c-c905e4098397)
