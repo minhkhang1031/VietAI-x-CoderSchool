@@ -16,10 +16,13 @@ Parameters:
 Result: 
  - mAP50: 0.788
  - mAP50-95: 0.657
- - Class     Images  Instances      Box(P          R      mAP50  mAP50-95)
-    all       1813      21325      0.948      0.722      0.788      0.657
-  player       1813      18111      0.974      0.995      0.995      0.892
-    ball       1712       3214      0.922      0.449      0.581      0.421
+
+   
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)
+                  all        1813     21325        0.948     0.722     0.788      0.657
+                  player     1813     18111        0.974     0.995     0.995      0.892
+                  ball       1712      3214        0.922     0.449     0.581      0.421
+
    
  => Good performance for the player object. Although performance for the ball object quite lower but also it is increased significantly compared to init model.
 
